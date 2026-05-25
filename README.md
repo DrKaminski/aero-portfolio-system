@@ -1,10 +1,14 @@
 # 🚀 Christopher Kaminski - Aero-Portfolio-System
 
-**Mission Control Dashboard**
+<div align="center">
 
-Aerospace Engineer | Ph.D. Candidate in Mechanical Engineering (Aeroelasticity) | B-21 Systems Integration | Venture Capital Strategist
+**MISSION CONTROL DASHBOARD**
 
-![SpaceX Starship Launch](https://github.com/user-attachments/assets/placeholder-starship)
+![Animated Starfield](https://github.com/DrKaminski/aero-portfolio-system/blob/main/assets/hero-animation.svg)
+
+**Aerospace Engineer** | **Ph.D. Aeroelasticity (Duke)** | **B-21 Systems Integration** | **Venture Capital Strategist**
+
+</div>
 
 ## Flight Phases
 
