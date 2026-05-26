@@ -1,50 +1,252 @@
-<svg width="800" height="300" viewBox="0 0 800 300" xmlns="http://www.w3.org/2000/svg" style="background: #0a0a1f;">
-  <!-- Starfield -->
+<svg width="1200" height="520" viewBox="0 0 1200 520" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
   <defs>
-    <style>
-      @keyframes twinkle {
-        0%, 100% { opacity: 0.3; }
-        50% { opacity: 1; }
-      }
-      .star { animation: twinkle 4s infinite; }
-    </style>
+    <!-- Synthwave sky — deep purple → magenta → orange at horizon (reference photo) -->
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%"   stop-color="#3d0a6b"/>
+      <stop offset="28%"  stop-color="#7b1fa8"/>
+      <stop offset="52%"  stop-color="#c2188a"/>
+      <stop offset="70%"  stop-color="#e8505a"/>
+      <stop offset="82%"  stop-color="#ff8c42"/>
+      <stop offset="100%" stop-color="#12082a"/>
+    </linearGradient>
+
+    <!-- Sun — bright yellow top, saturated orange bottom -->
+    <linearGradient id="sun" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%"   stop-color="#fff176"/>
+      <stop offset="35%"  stop-color="#ffca28"/>
+      <stop offset="70%"  stop-color="#ff9800"/>
+      <stop offset="100%" stop-color="#e65100"/>
+    </linearGradient>
+
+    <!-- Grid floor -->
+    <linearGradient id="floor" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%"  stop-color="#0c0824"/>
+      <stop offset="100%" stop-color="#06041a"/>
+    </linearGradient>
+
+    <!-- Keep grid off the sun disc so slits reveal sky gradient -->
+    <clipPath id="floorGridClip">
+      <path fill-rule="evenodd" d="M 0,360 H 1200 V 520 H 0 Z M 600,360 m -178,0 a 178,178 0 1,0 356,0 a 178,178 0 1,0 -356,0 Z"/>
+    </clipPath>
+
+    <!-- Scanline overlay -->
+    <pattern id="scan" width="4" height="4" patternUnits="userSpaceOnUse">
+      <rect width="4" height="2" fill="#000" opacity="0.06"/>
+    </pattern>
+
+    <!-- Starship materials -->
+    <linearGradient id="steel" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%"  stop-color="#f5f6fa"/>
+      <stop offset="35%" stop-color="#cfd2dc"/>
+      <stop offset="70%" stop-color="#9aa0ad"/>
+      <stop offset="100%" stop-color="#5a5e6b"/>
+    </linearGradient>
+    <linearGradient id="plume" x1="1" y1="0" x2="0" y2="0">
+      <stop offset="0%"  stop-color="#fff5b0" stop-opacity="1"/>
+      <stop offset="40%" stop-color="#ffd700" stop-opacity="0.85"/>
+      <stop offset="100%" stop-color="#ff4400" stop-opacity="0"/>
+    </linearGradient>
+
+    <!-- Sun slit mask — evenly spaced, thicker toward bottom (classic synthwave) -->
+    <mask id="sunMask">
+      <rect width="1200" height="520" fill="white"/>
+      <rect x="400" y="366" width="400" height="4"  fill="black"/>
+      <rect x="400" y="378" width="400" height="5"  fill="black"/>
+      <rect x="400" y="392" width="400" height="6"  fill="black"/>
+      <rect x="400" y="408" width="400" height="7"  fill="black"/>
+      <rect x="400" y="426" width="400" height="9"  fill="black"/>
+      <rect x="400" y="446" width="400" height="11" fill="black"/>
+      <rect x="400" y="468" width="400" height="13" fill="black"/>
+      <rect x="400" y="492" width="400" height="16" fill="black"/>
+      <rect x="400" y="518" width="400" height="18" fill="black"/>
+    </mask>
+
+    <!-- Only reveal starship in the top sky arc (emerges left, crosses sun, hides right) -->
+    <!-- Orbit center (600,360), wedge ~208°–332° clockwise, r=320 includes engine plume -->
+    <mask id="shipVisibleArc">
+      <rect width="1200" height="520" fill="black"/>
+      <path d="M 600,360 L 318,213 A 320,320 0 0,1 882,213 Z" fill="white"/>
+    </mask>
+
+    <!-- Reusable starship geometry -->
+    <g id="starship-lit">
+      <polygon points="-10,0 -95,-5 -145,0 -95,5" fill="url(#plume)">
+        <animate attributeName="opacity" values="0.65;1;0.65" dur="0.1s" repeatCount="indefinite"/>
+      </polygon>
+      <polygon points="-10,0 -52,-2.5 -78,0 -52,2.5" fill="#fff5b0" opacity="0.85">
+        <animate attributeName="opacity" values="0.5;1;0.5" dur="0.07s" repeatCount="indefinite"/>
+      </polygon>
+      <polygon points="-48,-9 -68,-24 -36,-9" fill="#3a3e48" stroke="#1a1c22" stroke-width="0.7"/>
+      <polygon points="-48, 9 -68, 24 -36, 9" fill="#3a3e48" stroke="#1a1c22" stroke-width="0.7"/>
+      <path d="M -52,-9 L 42,-9 L 72,0 L 42,9 L -52,9 Z" fill="url(#steel)" stroke="#2a2c32" stroke-width="0.7"/>
+      <line x1="-24" y1="-9" x2="-24" y2="9" stroke="#6a6e78" stroke-width="0.45" opacity="0.75"/>
+      <line x1="4"   y1="-9" x2="4"   y2="9" stroke="#6a6e78" stroke-width="0.45" opacity="0.75"/>
+      <line x1="32"  y1="-9" x2="32"  y2="9" stroke="#6a6e78" stroke-width="0.45" opacity="0.75"/>
+      <path d="M -52,2.5 L 42,2.5 L 62,6.5 L 42,9 L -52,9 Z" fill="#101015" opacity="0.85"/>
+      <polygon points="32,-9 42,-19 50,-9" fill="#3a3e48" stroke="#1a1c22" stroke-width="0.7"/>
+      <polygon points="32, 9 42, 19 50, 9" fill="#3a3e48" stroke="#1a1c22" stroke-width="0.7"/>
+      <line x1="42" y1="-5" x2="66" y2="0" stroke="#ffffff" stroke-width="0.7" opacity="0.55"/>
+      <rect x="-12" y="-1.5" width="24" height="1.5" fill="#1a1c22" opacity="0.65"/>
+    </g>
+
+    <!-- B-21 planform — bottom stencil rotated 90° CW (nose +x). -->
+    <!-- Refined wings: clean V leading edges, slightly blunted (chamfered) wingtips, -->
+    <!-- pronounced W trailing edge with forward-swept notch peaks and rear center vertex. -->
+    <!-- Coordinates already scaled ~50% smaller than previous revision. -->
+    <g id="b21-raider">
+      <!-- Outer neon glow shape -->
+      <polygon points="30,0 -13,50 -17,46 -6,28 -13,0 -6,-28 -17,-46 -13,-50"
+               fill="none" stroke="#ff2bd6" stroke-width="1.2" opacity="0.22"
+               stroke-linejoin="miter"/>
+      <!-- Main silhouette -->
+      <polygon points="30,0 -13,50 -17,46 -6,28 -13,0 -6,-28 -17,-46 -13,-50"
+               fill="#0a0014" stroke="#1a0828" stroke-width="0.4"
+               stroke-linejoin="miter"/>
+    </g>
   </defs>
-  
-  <!-- Background Stars -->
-  <circle cx="100" cy="50" r="2" fill="#fff" class="star" style="animation-delay: 0s"/>
-  <circle cx="250" cy="80" r="1.5" fill="#fff" class="star" style="animation-delay: 1.2s"/>
-  <circle cx="400" cy="40" r="2" fill="#fff" class="star" style="animation-delay: 0.8s"/>
-  <circle cx="550" cy="120" r="1" fill="#fff" class="star" style="animation-delay: 2.1s"/>
-  <circle cx="700" cy="60" r="2" fill="#fff" class="star" style="animation-delay: 0.5s"/>
-  <circle cx="150" cy="200" r="1.5" fill="#fff" class="star" style="animation-delay: 1.8s"/>
-  <circle cx="350" cy="220" r="2" fill="#fff" class="star" style="animation-delay: 0.3s"/>
-  <circle cx="600" cy="180" r="1" fill="#fff" class="star" style="animation-delay: 2.5s"/>
-  
-  <!-- Rocket -->
-  <g>
-    <!-- Rocket Body -->
-    <polygon points="380,220 400,100 420,220" fill="#c0c0c0" stroke="#fff" stroke-width="4"/>
-    <!-- Nose Cone -->
-    <polygon points="390,100 400,60 410,100" fill="#ff4444" stroke="#fff" stroke-width="3"/>
-    <!-- Fins -->
-    <polygon points="380,220 360,250 380,240" fill="#666" stroke="#fff" stroke-width="2"/>
-    <polygon points="420,220 440,250 420,240" fill="#666" stroke="#fff" stroke-width="2"/>
-    
-    <!-- Flames (Animated) -->
-    <g id="flames">
-      <polygon points="390,230 395,270 400,255 405,270 410,230" fill="#ff8800" opacity="0.9">
-        <animate attributeName="opacity" values="0.6;1;0.6" dur="0.4s" repeatCount="indefinite"/>
-      </polygon>
-      <polygon points="393,235 397,265 400,250 403,265 407,235" fill="#ffdd44" opacity="0.8">
-        <animate attributeName="opacity" values="0.5;0.9;0.5" dur="0.35s" repeatCount="indefinite"/>
-      </polygon>
+
+  <!-- Sky (full canvas — smooth gradient, no stars like reference) -->
+  <rect width="1200" height="520" fill="url(#sky)"/>
+
+  <!-- B-21 flying wing — slow, high-altitude pass over the scene -->
+  <g filter="drop-shadow(0 0 8px rgba(255,43,214,0.35))">
+    <animateTransform attributeName="transform" type="translate"
+                      values="-140,42; 1340,38" dur="52s" repeatCount="indefinite"/>
+    <g opacity="0.36">
+      <animate attributeName="opacity" values="0.18;0.42;0.24;0.38;0.18" dur="13s" repeatCount="indefinite"/>
+      <g transform="scale(1.0)">
+        <use xlink:href="#b21-raider"/>
+      </g>
     </g>
   </g>
-  
-  <!-- Orbiting Elements -->
-  <circle cx="500" cy="150" r="8" fill="#44ddff" opacity="0.7">
-    <animateMotion path="M 0,0 A 80,80 0 0 1 160,0" dur="8s" repeatCount="indefinite"/>
-  </circle>
-  
-  <text x="400" y="280" text-anchor="middle" fill="#ffffff" font-size="18" font-family="monospace">CHRISTOPHER KAMINSKI • AEROSPACE SYSTEMS</text>
+
+  <!-- Perspective grid floor (clipped away under sun so slits show sky) -->
+  <g clip-path="url(#floorGridClip)">
+    <rect y="360" width="1200" height="160" fill="url(#floor)"/>
+    <g stroke-width="1.4" fill="none" opacity="0.95">
+      <g stroke="#00e5ff">
+        <line x1="0" y1="368" x2="1200" y2="368"/>
+        <line x1="0" y1="382" x2="1200" y2="382"/>
+        <line x1="0" y1="400" x2="1200" y2="400"/>
+        <line x1="0" y1="422" x2="1200" y2="422"/>
+        <line x1="0" y1="448" x2="1200" y2="448"/>
+        <line x1="0" y1="478" x2="1200" y2="478"/>
+      </g>
+      <g stroke="#00e5ff" opacity="0.85">
+        <line x1="600" y1="360" x2="-180" y2="520"/>
+        <line x1="600" y1="360" x2="80"   y2="520"/>
+        <line x1="600" y1="360" x2="280"  y2="520"/>
+        <line x1="600" y1="360" x2="460"  y2="520"/>
+        <line x1="600" y1="360" x2="600"  y2="520"/>
+        <line x1="600" y1="360" x2="740"  y2="520"/>
+        <line x1="600" y1="360" x2="920"  y2="520"/>
+        <line x1="600" y1="360" x2="1120" y2="520"/>
+        <line x1="600" y1="360" x2="1380" y2="520"/>
+      </g>
+    </g>
+  </g>
+
+  <!-- Sun — large disc centered on horizon, striped lower half -->
+  <circle cx="600" cy="360" r="178" fill="url(#sun)" mask="url(#sunMask)"/>
+
+  <!-- Starship: top arc only; mountains/palms drawn after will occlude it -->
+  <g mask="url(#shipVisibleArc)">
+    <g>
+      <animateTransform attributeName="transform" type="rotate"
+                        from="0 600 360" to="360 600 360"
+                        dur="16s" repeatCount="indefinite"/>
+      <g transform="translate(787 360) rotate(90)">
+        <use xlink:href="#starship-lit"/>
+      </g>
+    </g>
+  </g>
+
+  <!-- Mountain silhouettes (frame the sun) -->
+  <polygon points="0,360 110,268 240,318 370,248 500,360" fill="#1a0828"/>
+  <polygon points="700,360 830,255 960,312 1090,262 1200,360" fill="#1a0828"/>
+
+  <!-- Quadcopters hovering above each mountain -->
+  <g filter="drop-shadow(0 0 6px rgba(0,229,255,0.45))" fill="none" stroke="#00e5ff" stroke-width="0.85">
+    <!-- Left mountain -->
+    <g>
+      <animateTransform attributeName="transform" type="translate"
+                        values="255,232; 258,225; 253,228; 255,232" dur="5.5s" repeatCount="indefinite"/>
+      <g transform="rotate(-8) scale(1.1)" opacity="0.82">
+        <animate attributeName="opacity" values="0.65;0.9;0.7;0.85;0.65" dur="5.5s" repeatCount="indefinite"/>
+        <line x1="-9" y1="-9" x2="9" y2="9"/>
+        <line x1="9" y1="-9" x2="-9" y2="9"/>
+        <rect x="-3.5" y="-3.5" width="7" height="7" rx="1.2"/>
+        <circle cx="-11" cy="-11" r="4.5" stroke-dasharray="3 2" opacity="0.85">
+          <animateTransform attributeName="transform" type="rotate" from="0 -11 -11" to="360 -11 -11" dur="0.35s" repeatCount="indefinite"/>
+        </circle>
+        <circle cx="11" cy="-11" r="4.5" stroke-dasharray="3 2" opacity="0.85">
+          <animateTransform attributeName="transform" type="rotate" from="0 11 -11" to="360 11 -11" dur="0.35s" repeatCount="indefinite"/>
+        </circle>
+        <circle cx="-11" cy="11" r="4.5" stroke-dasharray="3 2" opacity="0.85">
+          <animateTransform attributeName="transform" type="rotate" from="0 -11 11" to="360 -11 11" dur="0.35s" repeatCount="indefinite"/>
+        </circle>
+        <circle cx="11" cy="11" r="4.5" stroke-dasharray="3 2" opacity="0.85">
+          <animateTransform attributeName="transform" type="rotate" from="0 11 11" to="360 11 11" dur="0.35s" repeatCount="indefinite"/>
+        </circle>
+      </g>
+    </g>
+    <!-- Right mountain -->
+    <g>
+      <animateTransform attributeName="transform" type="translate"
+                        values="915,228; 912,221; 917,224; 915,228" dur="6.2s" repeatCount="indefinite"/>
+      <g transform="rotate(6) scale(1.05)" opacity="0.82">
+        <animate attributeName="opacity" values="0.6;0.88;0.72;0.82;0.6" dur="6.2s" repeatCount="indefinite"/>
+        <line x1="-9" y1="-9" x2="9" y2="9"/>
+        <line x1="9" y1="-9" x2="-9" y2="9"/>
+        <rect x="-3.5" y="-3.5" width="7" height="7" rx="1.2"/>
+        <circle cx="-11" cy="-11" r="4.5" stroke-dasharray="3 2" opacity="0.85">
+          <animateTransform attributeName="transform" type="rotate" from="0 -11 -11" to="360 -11 -11" dur="0.38s" repeatCount="indefinite"/>
+        </circle>
+        <circle cx="11" cy="-11" r="4.5" stroke-dasharray="3 2" opacity="0.85">
+          <animateTransform attributeName="transform" type="rotate" from="0 11 -11" to="360 11 -11" dur="0.38s" repeatCount="indefinite"/>
+        </circle>
+        <circle cx="-11" cy="11" r="4.5" stroke-dasharray="3 2" opacity="0.85">
+          <animateTransform attributeName="transform" type="rotate" from="0 -11 11" to="360 -11 11" dur="0.38s" repeatCount="indefinite"/>
+        </circle>
+        <circle cx="11" cy="11" r="4.5" stroke-dasharray="3 2" opacity="0.85">
+          <animateTransform attributeName="transform" type="rotate" from="0 11 11" to="360 11 11" dur="0.38s" repeatCount="indefinite"/>
+        </circle>
+      </g>
+    </g>
+  </g>
+
+  <!-- Palm tree silhouettes -->
+  <g fill="#1a0828">
+    <rect x="78" y="205" width="6" height="155"/>
+    <path d="M81 205 Q38 185 18 200 Q44 192 80 214 Z"/>
+    <path d="M81 205 Q124 183 148 197 Q118 193 82 214 Z"/>
+    <path d="M81 205 Q54 175 34 150 Q58 175 82 210 Z"/>
+    <path d="M81 205 Q108 175 128 150 Q104 175 82 210 Z"/>
+    <path d="M81 205 Q70 170 78 138 Q84 170 82 205 Z"/>
+    <rect x="148" y="225" width="5" height="135"/>
+    <path d="M150 225 Q114 210 94 220 Q119 215 152 230 Z"/>
+    <path d="M150 225 Q186 205 210 217 Q180 215 152 233 Z"/>
+    <path d="M150 225 Q128 195 113 170 Q138 197 152 230 Z"/>
+    <path d="M150 225 Q172 195 187 172 Q166 198 152 230 Z"/>
+    <rect x="1116" y="205" width="6" height="155"/>
+    <path d="M1119 205 Q1162 185 1182 200 Q1156 192 1120 214 Z"/>
+    <path d="M1119 205 Q1076 183 1052 197 Q1082 193 1118 214 Z"/>
+    <path d="M1119 205 Q1146 175 1166 150 Q1142 175 1118 210 Z"/>
+    <path d="M1119 205 Q1092 175 1072 150 Q1096 175 1118 210 Z"/>
+    <path d="M1119 205 Q1130 170 1122 138 Q1116 170 1118 205 Z"/>
+    <rect x="1047" y="225" width="5" height="135"/>
+    <path d="M1049 225 Q1085 210 1105 220 Q1080 215 1047 230 Z"/>
+    <path d="M1049 225 Q1013 205 989 217 Q1019 215 1047 233 Z"/>
+    <path d="M1049 225 Q1071 195 1086 170 Q1061 197 1047 230 Z"/>
+    <path d="M1049 225 Q1027 195 1012 172 Q1033 198 1047 230 Z"/>
+  </g>
+
+  <!-- Scanline overlay -->
+  <rect width="1200" height="520" fill="url(#scan)"/>
+
+  <!-- Neon title -->
+  <text x="600" y="118" font-family="Arial Black, sans-serif" font-size="72" fill="#ffffff" text-anchor="middle"
+        filter="drop-shadow(0 0 18px #ff2bd6) drop-shadow(0 0 6px #ffffff)">CHRISTOPHER KAMINSKI</text>
+  <text x="600" y="160" font-family="Arial, sans-serif" font-size="20" fill="#ffe27a" text-anchor="middle" letter-spacing="4"
+        filter="drop-shadow(0 0 4px #ff8800)">Aerospace Engineer • Duke Ph.D. • American Dynamism</text>
 </svg>

@@ -1,65 +1,104 @@
 <div align="center">
 
-<svg width="100%" height="460" viewBox="0 0 1200 460" xmlns="http://www.w3.org/2000/svg" style="background:#0a001a; border-radius:12px; max-width:100%; box-shadow: 0 0 40px rgba(255,0,170,0.4);">
-  <defs>
-    <pattern id="grid" width="50" height="50" patternUnits="userSpaceOnUse">
-      <path d="M 50 0 L 0 0 0 50" fill="none" stroke="#00f7ff" stroke-width="1.2" opacity="0.25"/>
-    </pattern>
-  </defs>
-  
-  <!-- Grid Background -->
-  <rect width="1200" height="460" fill="url(#grid)"/>
-  
-  <!-- Neon Title Block -->
-  <text x="600" y="140" font-family="Arial Black, sans-serif" font-size="78" fill="#ffffff" text-anchor="middle" filter="drop-shadow(0 0 20px #ff00aa)">CHRISTOPHER KAMINSKI</text>
-  <text x="600" y="185" font-family="Arial, sans-serif" font-size="23" fill="#00f7ff" text-anchor="middle" letter-spacing="6">AEROELASTICITY PH.D. • TECHNOCRAT • SYSTEMS ENGINEER</text>
-  
-  <!-- Elegant Neon Frame -->
-  <rect x="90" y="230" width="1020" height="170" rx="18" fill="none" stroke="#ff00aa" stroke-width="7" opacity="0.85">
-    <animate attributeName="stroke-opacity" values="0.65;1;0.65" dur="4s" repeatCount="indefinite"/>
-  </rect>
-  
-  <!-- Stylized Craft -->
-  <g transform="translate(535 255)">
-    <polygon points="65,15 35,105 95,105" fill="#1a0033" stroke="#00f7ff" stroke-width="7"/>
-    <polygon points="65,15 35,105 95,105" fill="none" stroke="#ff00aa" stroke-width="3">
-      <animate attributeName="stroke-dashoffset" values="0;40" dur="3s" repeatCount="indefinite"/>
-    </polygon>
-    <!-- Engine Flame -->
-    <polygon points="47,110 60,155 73,125 80,155 88,110" fill="#ff4400">
-      <animate attributeName="opacity" values="0.8;1;0.8" dur="0.1s" repeatCount="indefinite"/>
-    </polygon>
-  </g>
-  
-  <!-- Technocratic Data -->
-  <text x="180" y="340" font-size="16" fill="#00f7ff">HARMONIC BALANCE STABILITY</text>
-  <text x="820" y="340" font-size="16" fill="#ff00aa">B-21 • DUKE • ARCHAIUS</text>
-</svg>
-
-</div>
+<!-- External SVG keeps SMIL animations alive (GitHub strips them from inline SVG) -->
+<img src="assets/hero-animation.svg" alt="Synthwave sunset — Starship orbiting the sun" width="100%"
+     style="border-radius:14px; max-width:1200px; box-shadow:0 0 50px rgba(255,0,170,0.5);"/>
 
 <br>
 
-# Mission Control Portfolio
+<!-- Quick Stats Strip -->
 
-**Christopher Kaminski** — Advancing reusable aerospace systems through aeroelasticity, rigorous certification, and strategic technology integration.
+![PhD](https://img.shields.io/badge/Ph.D._Candidate-Duke_Mechanical-ffd700?style=for-the-badge&labelColor=1a0533)
+![Clearance](https://img.shields.io/badge/Clearance-Secret_%2B_SAP-ff2bd6?style=for-the-badge&labelColor=1a0533)
+![Domain](https://img.shields.io/badge/Domain-Aeroelasticity_%2F_Propulsion-ff8800?style=for-the-badge&labelColor=1a0533)
+![Status](https://img.shields.io/badge/Open_To-SpaceX_Propulsion-c8186e?style=for-the-badge&labelColor=1a0533)
 
----
-
-## Flight Phases
-
-### 1. Educational Background with PhD
-[→ Deep Dive](./projects/education)
-
-### 2. Northrop Grumman (B-21 Program)
-[→ Deep Dive](./projects/northrop-grumman)
-
-### 3. Duke Capital Partners
-[→ Deep Dive](./projects/duke-capital-partners)
-
-### 4. VC Experience & Tech Integration
-[→ Deep Dive](./projects/vc-experience)
+</div>
 
 ---
 
-**Request collaborator access** for full technical artifacts (Fortran solvers, Python scripts, CFD visualizations, verification matrices).
+## 🛰️ Mission Brief
+
+> Advancing reusable aerospace systems through **nonlinear aeroelastic stability analysis**, **rigorous certification practice**, and **strategic technology integration** — engineered for the rapid-iteration culture that defines Raptor and Starship.
+
+Christopher Kaminski is a Duke Ph.D. candidate developing harmonic balance solvers for non-synchronous vibrations in turbomachinery, with prior systems engineering experience on the **B-21 Raider** program and dual exposure to defense-tech integration and venture capital due diligence. This portfolio is a living, version-controlled artifact of that trajectory.
+
+---
+
+## 🌅 Flight Phases — Deep Dives
+
+<table>
+<tr>
+<td width="50%" valign="top">
+
+### 🎓 1. Research & Education
+**Duke Ph.D. — Aeroelasticity Group**
+*Aug 2022 – Present • Durham, NC*
+
+Harmonic balance solvers for nonlinear flow instabilities. Direct line to **Raptor stability** and **Starship reentry loads**.
+
+[**→ Open Deep Dive**](./projects/education/)
+
+</td>
+<td width="50%" valign="top">
+
+### 🛩️ 2. Northrop Grumman
+**B-21 Program — Systems Engineering**
+*Jun 2021 – Aug 2022 • Secret + SAP*
+
+ECS airworthiness automation, fuel subsystem certification, VMS requirements. Hard-won **certification rigor**.
+
+[**→ Open Deep Dive**](./projects/northrop-grumman/)
+
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
+
+### 💼 3. Duke Capital Partners
+**Sr. VC Associate**
+*Sep 2024 – Present*
+
+Deep-tech / aerospace investment screening, data-room diligence, leadership interviews, investment memos.
+
+[**→ Open Deep Dive**](./projects/duke-capital-partners/)
+
+</td>
+<td width="50%" valign="top">
+
+### 🛠️ 4. Archaius Inc.
+**Engineering & Growth Strategy**
+*Sep 2025 – Present*
+
+Proprietary anti-jamming tech integrated into government-test drones. Series A prep.
+
+[**→ Open Deep Dive**](./projects/vc-experience/)
+
+</td>
+</tr>
+</table>
+
+---
+
+## 📡 Skills Telemetry
+
+**Numerical Methods** &nbsp;·&nbsp; Harmonic Balance &nbsp;·&nbsp; Global Stability Analysis &nbsp;·&nbsp; Fluid-Structure Interaction &nbsp;·&nbsp; CFD
+
+**Languages** &nbsp;·&nbsp; Fortran &nbsp;·&nbsp; Python &nbsp;·&nbsp; MATLAB &nbsp;·&nbsp; Bash
+
+**Engineering Practice** &nbsp;·&nbsp; Requirements Traceability &nbsp;·&nbsp; Airworthiness Certification &nbsp;·&nbsp; V&V &nbsp;·&nbsp; Systems Integration
+
+**Strategy** &nbsp;·&nbsp; Technical Due Diligence &nbsp;·&nbsp; Investment Memos &nbsp;·&nbsp; Defense-Tech Partnerships
+
+---
+
+<div align="center">
+
+### 📬 Contact
+
+Request **collaborator access** for full technical artifacts:
+Fortran solvers · Python certification scripts · CFD visualizations · Verification matrices · Anonymized investment memos
+
+<sub>This portfolio is a private, version-controlled repository. Recruiters are invited as collaborators.</sub>
+
+</div>
