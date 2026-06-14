@@ -12,7 +12,7 @@
 - In-house Fortran code for novel fluid-structure interaction models.
 - Directly applicable to Raptor engine stability and Starship reentry aeroelastic loads.
 
-**M.S. Mechanical Engineering** (University of Central Florida) & **B.S. Aerospace Engineering** (UCF, Honors)
+**M.S. Mechanical Engineering** (Duke University) & **B.S. Aerospace Engineering** (UCF, Honors)
 
 **SpaceX Relevance**: Advanced nonlinear stability analysis techniques for propulsion and vehicle dynamics.
 
