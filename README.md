@@ -72,7 +72,7 @@ Deep-tech / aerospace investment screening, data-room diligence, leadership inte
 
 Proprietary anti-jamming tech integrated into government-test drones. Series A prep.
 
-[**→ Open Deep Dive**](./projects/vc-experience/)
+[**→ Open Deep Dive**](./projects/Archaius-SAFE-to-SeriesA/)
 
 </td>
 </tr>
