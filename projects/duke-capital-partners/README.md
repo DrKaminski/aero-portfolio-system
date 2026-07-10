@@ -1,4 +1,4 @@
-# 💼 Duke Capital Partners — Case Studies in American Dynamism
+# 💼 Duke Capital Partners — Case Studies in AI & Hard Tech Investments
 
 **Senior Venture Capital Associate** &nbsp;·&nbsp; Sep 2025 – Present
 **Venture Capital Associate** &nbsp;·&nbsp; Sep 2024 – Sep 2025
@@ -7,11 +7,11 @@
 
 ---
 
-## 🇺🇸 Investment Thesis — American Dynamism
+## 🇺🇸 Broader Investment Thesis — Tangible, Substantive American Dynamism
 
-> America's next great companies will be the ones that **rebuild the physical economy**: defense, propulsion, advanced manufacturing, energy, and the dual-use infrastructure that underwrites national sovereignty.
+> When I first joined Duke Capital Partners, the portfolio was heavily weighted towards biotech and SaaS companies. As hard tech investment began to grow in prominence around 2024, I was well positioned with my hard-tech aerospace background to direct DCP investment towards this burgeoning sector. To me, true abundance means success at a civilizational level, far beyond pure economic metrics. Therefore, I believe we ought to pritoritize companies that can not only drive great returns, but also create technological advancement that meaningfully advances human capability and consciousness. 
 
-I share the broad framing championed by Andreessen Horowitz's American Dynamism practice, but weight my own pickaxe-and-shovel toward **propulsion, hypersonics, autonomy, and the geographic clustering of hard-tech talent** — the categories where capital, physics, and national interest converge. The case studies below are the deals where I put that thesis to work at DCP.
+As AI models began to gain capabilities at a rates representative of exponential growth curves, I realized that the SaaS business model which had dominated Silicon Valley for so long was coming to an end. In its place, I believe, a wave of companies would use the efficeincy increases presented by AI advancement to build in the world of atoms, not just in the world of bits. In short, software development would get commoditized, and hardware would represent a new moat. My thesis is generally in line with the American Dynamism Manifesto by the VC firm Andreesen Horowitz.
 
 ---
 
@@ -30,31 +30,24 @@ I share the broad framing championed by Andreessen Horowitz's American Dynamism 
 | | |
 |---|---|
 | **My Role** | Sourced the opportunity; led both DCP screening calls; directed diligence |
-| **Check Size** | **$300K** directed from DCP |
-| **Stage** | Early — community formation phase |
+| **Stage** | Early — Seed Round |
 | **Geography** | Central Texas (Austin orbit) |
 | **Status** | ✅ Closed |
 
-### The Situation
-
-Proto-Town is a physical campus and founder community built for **hard-tech builders** — the people prototyping engines, drones, robotics, and energy systems who need workshop space, peers, and proximity to real-world testing more than they need another co-working desk in SoMa. The premise: hardware companies don't iterate at software speed when their founders are isolated. Co-locate them, give them ground to build on, and the iteration cycle collapses.
-
 ### My Role
 
-- **Sourced** the deal independently, outside DCP's normal pipeline
+- **Sourced** After learning about Proto-Town in my personal research, I immediately reached out to the founders to arrange a call with DCP.
 - **Built the internal case** across two screening calls — framed the opportunity to the partnership against the broader Austin hard-tech migration
-- **Led the due diligence**: founder interviews, community-fit assessment, capital-efficiency analysis
-- **Directed $300K of DCP capital** into the round post-diligence
+- **Led the due diligence**: founder interviews, discussion of overall thesis, reviewing the capabilities of the team
+- **Got DCP an allocation & Closed** Round was oversubscribed, but we were able to leverage our Duke connection and talent-pipeline leverage.
 
 ### Why It Maps to the Thesis
 
 This deal is American Dynamism executed at the **infrastructure layer** rather than the product layer.
 
-The SpaceX IPO — when it lands — will trigger a wealth and talent cascade through the Austin / South Texas corridor that the Bay Area saw after Google and Facebook. Hundreds of newly-liquid engineers, with first-hand experience operating at the frontier of propulsion and avionics, will be looking for what to build next. **There is no Y Combinator for hard tech.** The closest analogs — Founders Fund, a16z American Dynamism, hyperscale defense primes — fund individual companies; none provide the physical commons that hard-tech founders actually need.
+The SpaceX IPO has created a large concentration of high-end hardware talent combined with financial liquidity. Similar to how the early 2010s IPOs contributed to the development of Silicon Valley, I anticipate the SpaceX IPO will create a plethora of hard-tech companies which implement the SpaceX ethos in entirely new domains. Just as China has Shenzhen, America needs a geographically concentrated region for rapid hardware prototyping. Proto-Town aims to become the Y-Combinator of hard tech, and it has the backing and talent to impelment this vision.
 
-Proto-Town is a bet that the next generation of American manufacturing, defense, and aerospace companies will be founded **within driving distance of one another**, that physical co-location compounds at the hardware/firmware/systems-integration interfaces in ways Slack and Zoom cannot, and that owning the **community substrate** early is asymmetric upside as the cluster forms.
-
-Sourcing it personally — rather than waiting for it to come through DCP's normal funnel — is the kind of thesis-driven origination I want to bring to whichever team I join next.
+I am particuarly proud of getting Duke Capital Partners involved in ProtoTown because I hope that this will build out a pipeline of startup talent to the networks necessary to go from 0 to 1. Proto-Town is valuable to Duke Engineering as a whole because it gives Duke students the ability to rapidly implement their startup idea in an environment with the physical tooling and density of hardware talent, increasing the talent output of Duke University as a whole. 
 
 ---
 
