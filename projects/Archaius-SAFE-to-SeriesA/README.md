@@ -21,14 +21,14 @@
 <tr>
 <td width="50%" valign="top" align="center">
 
-<img src="./assets/ft-campbell-fpv-demo.png" alt="Archaius FPV flight demonstration — Grale C2 operator interface" width="100%" height="320" style="width:100%; height:320px; object-fit:cover; border-radius:10px; box-shadow:0 0 24px rgba(255,43,214,0.25);"/>
+<img src="./assets/ft-campbell-fpv-demo.png" alt="Archaius FPV flight demonstration — Grale C2 operator interface" height="420" style="height:420px; width:auto; max-width:100%; border-radius:10px; box-shadow:0 0 24px rgba(255,43,214,0.25);"/>
 
 <sub><em>On-console with Army operators — flying and demonstrating Grale C2 in the field.</em></sub>
 
 </td>
 <td width="50%" valign="top" align="center">
 
-<img src="./assets/abe-drone-grale-c2.png" alt="Attritable Battlefield Enabler (ABE) drone with Grale C2 integration" width="100%" height="320" style="width:100%; height:320px; object-fit:cover; border-radius:10px; box-shadow:0 0 24px rgba(255,43,214,0.25);"/>
+<img src="./assets/abe-drone-grale-c2.png" alt="Attritable Battlefield Enabler (ABE) drone with Grale C2 integration" height="420" style="height:420px; width:auto; max-width:100%; border-radius:10px; box-shadow:0 0 24px rgba(255,43,214,0.25);"/>
 
 <sub><em>Attritable Battlefield Enabler (ABE) platform — Grale C2 integrated into the existing stack.</em></sub>
 
