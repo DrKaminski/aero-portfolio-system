@@ -9,9 +9,9 @@
 <!-- Quick Stats Strip -->
 
 ![PhD](https://img.shields.io/badge/Ph.D._Candidate-Duke_Mechanical-ffd700?style=for-the-badge&labelColor=1a0533)
-![Clearance](https://img.shields.io/badge/Clearance-Secret_%2B_SAP-ff2bd6?style=for-the-badge&labelColor=1a0533)
-![Domain](https://img.shields.io/badge/Domain-Aeroelasticity_%2F_Propulsion-ff8800?style=for-the-badge&labelColor=1a0533)
-![Status](https://img.shields.io/badge/Open_To-SpaceX_Propulsion-c8186e?style=for-the-badge&labelColor=1a0533)
+![Clearance](https://img.shields.io/badge/Clearance-Secret_%2B_SAP_(Expired)-ff2bd6?style=for-the-badge&labelColor=1a0533)
+![Technical Domain](https://img.shields.io/badge/Domain-Aeroelasticity_%2F_Propulsion-ff8800?style=for-the-badge&labelColor=1a0533)
+![Status](https://img.shields.io/badge/Open_To-Aerospace%2FDefense--Tech-c8186e?style=for-the-badge&labelColor=1a0533)
 
 </div>
 
@@ -35,7 +35,7 @@ Christopher Kaminski is a Duke Ph.D. candidate developing harmonic balance solve
 **Duke Ph.D. — Aeroelasticity Group**
 *Aug 2022 – Present • Durham, NC*
 
-Harmonic balance solvers for nonlinear flow instabilities. Direct line to **Raptor stability** and **Starship reentry loads**.
+Harmonic balance solvers for nonlinear flow instabilities. Direct line to other high profile aerospace projects..
 
 [**→ Open Deep Dive**](./projects/education/)
 
@@ -46,7 +46,7 @@ Harmonic balance solvers for nonlinear flow instabilities. Direct line to **Rapt
 **B-21 Program — Systems Engineering**
 *Jun 2021 – Aug 2022 • Secret + SAP*
 
-ECS airworthiness automation, fuel subsystem certification, VMS requirements. Hard-won **certification rigor**.
+ECS & Fuel airworthiness certification, VMS requirements. Hard-won **validation rigor**.
 
 [**→ Open Deep Dive**](./projects/northrop-grumman/)
 
