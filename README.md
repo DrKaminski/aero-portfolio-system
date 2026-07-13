@@ -19,9 +19,7 @@
 
 ## 🛰️ Mission Brief
 
-> Advancing reusable aerospace systems through **nonlinear aeroelastic stability analysis**, **rigorous certification practice**, and **strategic technology integration** — engineered for the rapid-iteration culture that defines Raptor and Starship.
-
-Christopher Kaminski is a Duke Ph.D. candidate developing harmonic balance solvers for non-synchronous vibrations in turbomachinery, with prior systems engineering experience on the **B-21 Raider** program and dual exposure to defense-tech integration and venture capital due diligence. This portfolio is a living, version-controlled artifact of that trajectory.
+> Christopher Kaminski is a Duke Ph.D. candidate developing harmonic balance solvers for non-synchronous vibrations in turbomachinery, with prior systems engineering experience on the **B-21 Raider** program and dual exposure to defense-tech integration and venture capital due diligence. This portfolio is a living, version-controlled artifact of that trajectory.
 
 ---
 
