@@ -6,7 +6,6 @@ Demonstrate aerospace engineering capability through a living, version-controlle
 ## 2. Functional Requirements
 - FR-1: Traceable project artifacts (research, industry, skills)
 - FR-2: Interactive elements (Plotly dashboards where possible)
-- FR-3: Clear SpaceX relevance mapping
 
 ## 3. Non-Functional
 - NF-1: Private with controlled collaborator access
