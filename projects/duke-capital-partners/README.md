@@ -9,9 +9,9 @@
 
 ## 🇺🇸 Broader Investment Thesis — Tangible, Substantive American Dynamism
 
-> When I first joined Duke Capital Partners, the portfolio was heavily weighted towards biotech and SaaS companies. As hard tech investment began to grow in prominence around 2024, I was well positioned with my hard-tech aerospace background to direct DCP investment towards this burgeoning sector. To me, true abundance means success at a civilizational level, far beyond pure economic metrics. Therefore, I believe we ought to pritoritize companies that can not only drive great returns, but also create technological advancement that meaningfully advances human capability and consciousness. 
+> When I first joined Duke Capital Partners, the portfolio was heavily weighted towards biotech and SaaS companies. As hard tech investment began to grow in prominence around 2024, I was well positioned with my hard-tech aerospace background to direct DCP investment towards this burgeoning sector. To me, true abundance means success at a civilizational level, far beyond pure economic metrics. Therefore, I believe we ought to prioritize companies that can not only drive great returns, but also create technological advancement that meaningfully advances human capability and consciousness. 
 
-As AI models began to gain capabilities at a rates representative of exponential growth curves, I realized that the SaaS business model which had dominated Silicon Valley for so long was coming to an end. In its place, I believe, a wave of companies would use the efficeincy increases presented by AI advancement to build in the world of atoms, not just in the world of bits. In short, software development would get commoditized, and hardware would represent a new moat. My thesis is generally in line with the American Dynamism Manifesto by the VC firm Andreesen Horowitz.
+As AI models began to gain capabilities at rates representative of exponential growth curves, I realized that the SaaS business model which had dominated Silicon Valley for so long was coming to an end. In its place, I believe, a wave of companies would use the efficiency increases presented by AI advancement to build in the world of atoms, not just in the world of bits. In short, software development would get commoditized, and hardware would represent a new moat. My thesis is generally in line with the American Dynamism Manifesto by the VC firm Andreessen Horowitz.
 
 Together with the Duke Capital Partners operations team, I have led the allocation of millions of dollars to deep tech startups.
 
@@ -47,9 +47,9 @@ Together with the Duke Capital Partners operations team, I have led the allocati
 
 This deal is American Dynamism executed at the **infrastructure layer** rather than the product layer.
 
-The SpaceX IPO has created a large concentration of high-end hardware talent combined with financial liquidity. Similar to how the early 2010s IPOs contributed to the development of Silicon Valley, I anticipate the SpaceX IPO will create a plethora of hard-tech companies which implement the SpaceX ethos in entirely new domains. Just as China has Shenzhen, America needs a geographically concentrated region for rapid hardware prototyping. Proto-Town aims to become the Y-Combinator of hard tech, and it has the backing and talent to impelment this vision.
+The SpaceX IPO has created a large concentration of high-end hardware talent combined with financial liquidity. Similar to how the early 2010s IPOs contributed to the development of Silicon Valley, I anticipate the SpaceX IPO will create a plethora of hard-tech companies which implement the SpaceX ethos in entirely new domains. Just as China has Shenzhen, America needs a geographically concentrated region for rapid hardware prototyping. Proto-Town aims to become the Y-Combinator of hard tech, and it has the backing and talent to implement this vision.
 
-I am particuarly proud of getting Duke Capital Partners involved in ProtoTown because I hope that this will build out a pipeline of startup talent to the networks necessary to go from 0 to 1. Proto-Town is valuable to Duke Engineering as a whole because it gives Duke students the ability to rapidly implement their startup idea in an environment with the physical tooling and density of hardware talent, increasing the talent output of Duke University as a whole. 
+I am particularly proud of getting Duke Capital Partners involved in Proto-Town because I hope that this will build out a pipeline of startup talent to the networks necessary to go from 0 to 1. Proto-Town is valuable to Duke Engineering as a whole because it gives Duke students the ability to rapidly implement their startup idea in an environment with the physical tooling and density of hardware talent, increasing the talent output of Duke University as a whole. 
 
 ---
 
@@ -79,7 +79,7 @@ I am particuarly proud of getting Duke Capital Partners involved in ProtoTown be
 
 ### Why It Maps to the Thesis
 
-This deal also fits into a necessary part of the larger American Dynamism thesis. Without domestic production of rare-earth magnets, nearly every heavy industry is beholden to Chinese-sourced components. This deal sees the market oppurtunity for rare-earth magnets given the increase in humanoid robotics and EV production, and all while making domestic tech manufacturing far more resilient. 
+This deal also fits into a necessary part of the larger American Dynamism thesis. Without domestic production of rare-earth magnets, nearly every heavy industry is beholden to Chinese-sourced components. This deal sees the market opportunity for rare-earth magnets given the increase in humanoid robotics and EV production, and all while making domestic tech manufacturing far more resilient. 
 
 Vulcan Elements manufactures sintered NdFeB magnets on U.S. soil and is building a ~$1B facility in Benson, NC to scale toward 10,000 tonnes of capacity, backed by a multi-hundred-million-dollar partnership with the Department of War's Office of Strategic Capital and upstream partner ReElement Technologies. This large local presence gives DCP an allocation in a company that is a critical part of the American tech manufacturing supply chain, all while being near the Research Triangle. This deal benefits DCP as a fund by giving Duke a direct talent pipeline to what is expected to be a major manufacturing hub. 
 

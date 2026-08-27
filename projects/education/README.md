@@ -19,7 +19,7 @@
 
 ## 🎓 Duke University — M.S. in Mechanical Engineering
 **Aug 2022 – Dec 2024**
--Obtained En-Route through Ph.D. coursework & reserach
+- Obtained En-Route through Ph.D. coursework & research
 
 ---
 

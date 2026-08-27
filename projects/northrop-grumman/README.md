@@ -18,10 +18,10 @@ Acquired and maintained **U.S. Secret** clearance and **Special Access Program (
 Systems engineering on a major airworthiness / software-certification path: automation, subsystem test support, and Vehicle Management System (VMS) requirements ownership.
 
 ### Contributions
-- **First Principles Thinking led to automation and early certification** Built **Python** automation for each of my responsible subsystems. The automation process cut manual certification cycle time and got the Fuel and ECS software **certified substantially earlier** than parallel efforts led by more experienced engineering teams.
-- **ECS — automation-driven airworthiness** Supported and conducted airworthiness certification for the Enviornmental Control System. Due to the broad nature of this subsytem, this was a significant responsibility which I was entrusted with.
-- **Fuel — certification testing** Supported and conducted software airworthiness certification testing for the Fuel subsystem: test execution, evidence capture, and certification process close-out under program constraints.
-- **VMS — requirements engineering** Created and modified Vehicle Management System software engineering requirements for subsystem interfaces, with traceability to verification.
+- **First Principles Thinking led to automation and early certification:** Built **Python** automation for each of my responsible subsystems. The automation process cut manual certification cycle time and got the Fuel and ECS software **certified substantially earlier** than parallel efforts led by more experienced engineering teams.
+- **ECS — automation-driven airworthiness:** Supported and conducted airworthiness certification for the Environmental Control System. Due to the broad nature of this subsystem, this was a significant responsibility which I was entrusted with.
+- **Fuel — certification testing:** Supported and conducted software airworthiness certification testing for the Fuel subsystem: test execution, evidence capture, and certification process close-out under program constraints.
+- **VMS — requirements engineering:** Created and modified Vehicle Management System software engineering requirements for subsystem interfaces, with traceability to verification.
 
 ### What this demonstrates
 - Certification and airworthiness rigor on a production defense program
@@ -37,8 +37,8 @@ Early systems-engineering exposure that led into the full-time B-21 role.
 
 ### Contributions
 
-- **Aircraft test plan development** Supported test-plan authorship by documenting test requirements, prerequisites, functions, objectives, approach, and test-equipment definition
-- **ECS bleed-flow algorithm documentation** Supported Environmental Control System **bleed flow algorithm** development and documented equation details for both **nominal** and **off-nominal** operating approaches
+- **Aircraft test plan development:** Supported test-plan authorship by documenting test requirements, prerequisites, functions, objectives, approach, and test-equipment definition
+- **ECS bleed-flow algorithm documentation:** Supported Environmental Control System **bleed flow algorithm** development and documented equation details for both **nominal** and **off-nominal** operating approaches
 
 ---
 

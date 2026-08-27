@@ -33,7 +33,7 @@
 **Duke Ph.D. — Aeroelasticity Group**
 *Aug 2022 – Present • Durham, NC*
 
-Harmonic balance solvers for nonlinear flow instabilities. Direct line to other high profile aerospace projects..
+Harmonic balance solvers for nonlinear flow instabilities. Direct line to other high profile aerospace projects.
 
 [**→ Open Deep Dive**](./projects/education/)
 
