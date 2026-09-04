@@ -1,0 +1,6 @@
+# Pitch deck stays local — source, assets, compiled PDF, and aux files.
+pitch-deck/
+
+texput.log
+.DS_Store
+**/.DS_Store

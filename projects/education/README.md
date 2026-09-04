@@ -41,7 +41,7 @@ Undergraduate foundation in aero / CFD before Duke. Two research tracks below.
 
 ---
 
-## 📄 Research Highlight — Duke Academic Paper
+## 📄 Research Highlight 01 — Duke Academic Paper
 
 ### Paper Snapshot
 
@@ -85,7 +85,46 @@ Undergraduate foundation in aero / CFD before Duke. Two research tracks below.
 
 ---
 
+## 📄 Research Highlight 02 — NASA Dragonfly (UCF)
 
+### Research Snapshot
+
+| | |
+|---|---|
+| **Project** | NASA **Dragonfly** — aerodynamic design, optimization, and Titan-relevant dust accumulation |
+| **Lab** | Computational Fluids & Aerodynamics Laboratory — University of Central Florida |
+| **Advisor** | Dr. Michael Kinzel |
+| **Role** | NASA Dragonfly Project Research Assistant |
+| **Dates** | March 2020 – July 2021 |
+| **Tools** | **Simcenter STAR-CCM+** — CFD meshing, setup, and analysis |
+| **Status** | ✅ Completed undergraduate research supporting Dragonfly development |
+
+### Research Topic
+- **Problem**: NASA Dragonfly is a rotorcraft lander for Titan. Near-surface flight in a dense atmosphere with lofted particulates creates two coupled design risks: aerodynamic performance in landing/hover, and **dust accumulation** on the airframe from rotor downwash.
+- **Method**: Ran independent **STAR-CCM+** studies in Dr. Kinzel's lab spanning (1) **aerodynamic design and optimization** of the Dragonfly configuration and (2) **Lagrangian multiphase** dust-accumulation analysis under **Titan-relevant** operating conditions — volume-fraction tracking on the vehicle surface coupled to the near-field flow.
+- **Result**: Landing / near-surface aero fields (pressure coefficient, wake, ground shear from downwash) and multiphase maps of where dust concentrates on the airframe — visual evidence of the STAR-CCM+ campaign.
+
+<div align="center">
+
+<img src="./assets/dragonfly-dust-accumulation.png" alt="STAR-CCM+ Lagrangian multiphase visualization — dust volume fraction on the Dragonfly airframe, velocity field, and ground-plane wall shear" width="90%" style="border-radius:10px; box-shadow:0 0 24px rgba(255,43,214,0.25);"/>
+
+<sub><em><strong>Figure 1.</strong> Lagrangian multiphase dust accumulation: Volume fraction of dust on airframe gives probablistic heatmap of dust accumulation.</em></sub>
+
+</div>
+
+<br>
+
+<div align="center">
+
+<img src="./assets/dragonfly-landing-cfd.png" alt="STAR-CCM+ Dragonfly landing CFD — surface pressure coefficient and velocity wake at solution time 1.7 s" width="90%" style="border-radius:10px; box-shadow:0 0 24px rgba(255,43,214,0.25);"/>
+
+<sub><em><strong>Figure 2.</strong> STAR-CCM+ landing / near-surface aerodynamic analysis: surface pressure coefficient analysis during landing sequence.</em></sub>
+
+</div>
+
+### Artifacts
+- [x] Dust-accumulation CFD (volume fraction / wall shear) → [`./assets/dragonfly-dust-accumulation.png`](./assets/dragonfly-dust-accumulation.png)
+- [x] Landing aero CFD (STAR-CCM+) → [`./assets/dragonfly-landing-cfd.png`](./assets/dragonfly-landing-cfd.png)
 
 ---
 

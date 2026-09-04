@@ -95,7 +95,7 @@ Proprietary anti-jamming tech integrated into government-test drones. Series A p
 ### 📬 Contact
 
 Request **collaborator access** for full technical artifacts:
-Fortran solvers · Python certification scripts · CFD visualizations · Verification matrices · Anonymized investment memos
+Fortran solvers · AeroElasticity MATLAB scripts · CFD visualizations · Verification matrices · Anonymized investment memos
 
 <sub>This portfolio is a private, version-controlled repository. Recruiters are invited as collaborators.</sub>
 
